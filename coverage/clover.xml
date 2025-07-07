@@ -1,121 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1751906690757" clover="3.2.0">
-  <project timestamp="1751906690757" name="All files">
-    <metrics statements="80" coveredstatements="70" conditionals="17" coveredconditionals="11" methods="29" coveredmethods="20" elements="126" coveredelements="101" complexity="0" loc="80" ncloc="80" packages="4" files="8" classes="8"/>
+<coverage generated="1751907137188" clover="3.2.0">
+  <project timestamp="1751907137188" name="All files">
+    <metrics statements="116" coveredstatements="20" conditionals="29" coveredconditionals="0" methods="33" coveredmethods="0" elements="178" coveredelements="20" complexity="0" loc="116" ncloc="116" packages="4" files="8" classes="8"/>
     <package name="area-chart">
-      <metrics statements="21" coveredstatements="20" conditionals="3" coveredconditionals="3" methods="9" coveredmethods="7"/>
+      <metrics statements="30" coveredstatements="5" conditionals="5" coveredconditionals="0" methods="10" coveredmethods="0"/>
       <file name="area-chart.css" path="C:\Users\ACER\Desktop\react-animated-charts\src\components\area-chart\area-chart.css">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
       </file>
       <file name="area-chart.tsx" path="C:\Users\ACER\Desktop\react-animated-charts\src\components\area-chart\area-chart.tsx">
-        <metrics statements="19" coveredstatements="18" conditionals="3" coveredconditionals="3" methods="9" coveredmethods="7"/>
+        <metrics statements="28" coveredstatements="3" conditionals="5" coveredconditionals="0" methods="10" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
-        <line num="25" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="31" count="10" type="stmt"/>
-        <line num="32" count="10" type="stmt"/>
-        <line num="36" count="5" type="stmt"/>
-        <line num="37" count="5" type="stmt"/>
-        <line num="41" count="5" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
       </file>
     </package>
     <package name="bar-chart">
-      <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <metrics statements="21" coveredstatements="5" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="bar-chart.css" path="C:\Users\ACER\Desktop\react-animated-charts\src\components\bar-chart\bar-chart.css">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
       </file>
       <file name="bar-chart.tsx" path="C:\Users\ACER\Desktop\react-animated-charts\src\components\bar-chart\bar-chart.tsx">
-        <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <metrics statements="19" coveredstatements="3" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
-        <line num="17" count="5" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
       </file>
     </package>
     <package name="donut-chart">
-      <metrics statements="27" coveredstatements="21" conditionals="9" coveredconditionals="5" methods="8" coveredmethods="5"/>
+      <metrics statements="36" coveredstatements="5" conditionals="11" coveredconditionals="0" methods="9" coveredmethods="0"/>
       <file name="donut-chart.css" path="C:\Users\ACER\Desktop\react-animated-charts\src\components\donut-chart\donut-chart.css">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
       </file>
       <file name="donut-chart.tsx" path="C:\Users\ACER\Desktop\react-animated-charts\src\components\donut-chart\donut-chart.tsx">
-        <metrics statements="25" coveredstatements="19" conditionals="9" coveredconditionals="5" methods="8" coveredmethods="5"/>
+        <metrics statements="34" coveredstatements="3" conditionals="11" coveredconditionals="0" methods="9" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="15" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="25" count="5" type="stmt"/>
-        <line num="26" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="27" count="5" type="stmt"/>
-        <line num="32" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="33" count="5" type="stmt"/>
-        <line num="34" count="5" type="stmt"/>
-        <line num="35" count="5" type="stmt"/>
-        <line num="36" count="5" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="33" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
       </file>
     </package>
     <package name="line-chart">
-      <metrics statements="20" coveredstatements="18" conditionals="3" coveredconditionals="3" methods="9" coveredmethods="6"/>
+      <metrics statements="29" coveredstatements="5" conditionals="5" coveredconditionals="0" methods="10" coveredmethods="0"/>
       <file name="line-chart.css" path="C:\Users\ACER\Desktop\react-animated-charts\src\components\line-chart\line-chart.css">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
       </file>
       <file name="line-chart.tsx" path="C:\Users\ACER\Desktop\react-animated-charts\src\components\line-chart\line-chart.tsx">
-        <metrics statements="18" coveredstatements="16" conditionals="3" coveredconditionals="3" methods="9" coveredmethods="6"/>
+        <metrics statements="27" coveredstatements="3" conditionals="5" coveredconditionals="0" methods="10" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
-        <line num="25" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-        <line num="32" count="5" type="stmt"/>
-        <line num="36" count="5" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
         <line num="49" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
       </file>
     </package>
   </project>
