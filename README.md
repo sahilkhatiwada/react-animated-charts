@@ -3,6 +3,9 @@
 [![codecov](https://codecov.io/gh/sahilkhatiwada/animated-charts/branch/main/graph/badge.svg)](https://codecov.io/gh/sahilkhatiwada/animated-charts)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Changelog](https://img.shields.io/github/v/release/sahilkhatiwada/animated-charts?label=changelog)](https://github.com/sahilkhatiwada/animated-charts/releases)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/sahilkhatiwada/animated-charts/pulls)
+[![Contributors](https://img.shields.io/github/contributors/sahilkhatiwada/animated-charts.svg)](https://github.com/sahilkhatiwada/animated-charts/graphs/contributors)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
 # react-animated-charts
 
