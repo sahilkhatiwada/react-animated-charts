@@ -1,6 +1,6 @@
 {
   "name": "animated-charts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Animated chart web components for all frameworks (React, Angular, Vue, HTML)",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -14,7 +14,7 @@
     "start": "stencil build --dev --watch",
     "test": "stencil test --spec --coverage"
   },
-  "author": "Your Name <your.email@example.com>",
+  "author": "Sahil Khatiwada",
   "license": "MIT",
   "devDependencies": {
     "@stencil/core": "^4.35.3",
