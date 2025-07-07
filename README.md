@@ -7,6 +7,10 @@
 [![Contributors](https://img.shields.io/github/contributors/sahilkhatiwada/animated-charts.svg)](https://github.com/sahilkhatiwada/animated-charts/graphs/contributors)
 [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
+---
+
+**Repository:** [github.com/sahilkhatiwada/animated-charts](https://github.com/sahilkhatiwada/animated-charts)
+
 # react-animated-charts
 
 **react-animated-charts** is a plug-and-play charting library designed to bring dashboards to life. Built with Tailwind CSS and Framer Motion, this package enables developers to quickly create stunning, mobile-responsive data visualizations with smooth, built-in animations.
