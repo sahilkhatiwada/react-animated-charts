@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1751907755813" clover="3.2.0">
-  <project timestamp="1751907755813" name="All files">
+<coverage generated="1751908166880" clover="3.2.0">
+  <project timestamp="1751908166881" name="All files">
     <metrics statements="117" coveredstatements="97" conditionals="29" coveredconditionals="23" methods="33" coveredmethods="33" elements="179" coveredelements="153" complexity="0" loc="117" ncloc="117" packages="4" files="8" classes="8"/>
     <package name="area-chart">
       <metrics statements="30" coveredstatements="25" conditionals="5" coveredconditionals="4" methods="10" coveredmethods="10"/>
@@ -14,31 +14,31 @@
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
-        <line num="25" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="31" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="31" count="16" type="cond" truecount="1" falsecount="0"/>
         <line num="32" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-        <line num="43" count="10" type="stmt"/>
-        <line num="44" count="10" type="stmt"/>
-        <line num="45" count="18" type="stmt"/>
-        <line num="49" count="5" type="stmt"/>
-        <line num="50" count="5" type="stmt"/>
-        <line num="54" count="5" type="stmt"/>
-        <line num="55" count="5" type="stmt"/>
-        <line num="56" count="5" type="stmt"/>
-        <line num="76" count="9" type="stmt"/>
+        <line num="43" count="8" type="stmt"/>
+        <line num="44" count="8" type="stmt"/>
+        <line num="45" count="14" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="76" count="7" type="stmt"/>
       </file>
     </package>
     <package name="bar-chart">
@@ -53,23 +53,23 @@
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="16" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="16" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="17" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="29" count="5" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-        <line num="32" count="5" type="stmt"/>
-        <line num="33" count="5" type="stmt"/>
-        <line num="38" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="38" count="7" type="cond" truecount="1" falsecount="1"/>
       </file>
     </package>
     <package name="donut-chart">
@@ -84,37 +84,37 @@
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="15" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="25" count="5" type="stmt"/>
-        <line num="26" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="27" count="5" type="stmt"/>
-        <line num="32" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="32" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="33" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="44" count="5" type="stmt"/>
-        <line num="45" count="5" type="stmt"/>
-        <line num="46" count="5" type="stmt"/>
-        <line num="47" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="5" type="stmt"/>
-        <line num="49" count="5" type="stmt"/>
-        <line num="50" count="5" type="stmt"/>
-        <line num="51" count="5" type="stmt"/>
-        <line num="57" count="9" type="stmt"/>
-        <line num="58" count="9" type="stmt"/>
-        <line num="59" count="9" type="stmt"/>
-        <line num="60" count="9" type="stmt"/>
-        <line num="61" count="9" type="stmt"/>
-        <line num="79" count="9" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="57" count="7" type="stmt"/>
+        <line num="58" count="7" type="stmt"/>
+        <line num="59" count="7" type="stmt"/>
+        <line num="60" count="7" type="stmt"/>
+        <line num="61" count="7" type="stmt"/>
+        <line num="79" count="7" type="stmt"/>
       </file>
     </package>
     <package name="line-chart">
@@ -129,30 +129,30 @@
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
-        <line num="25" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="31" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="31" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="32" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-        <line num="43" count="5" type="stmt"/>
-        <line num="44" count="5" type="stmt"/>
-        <line num="45" count="9" type="stmt"/>
-        <line num="49" count="5" type="stmt"/>
-        <line num="50" count="5" type="stmt"/>
-        <line num="51" count="5" type="stmt"/>
-        <line num="64" count="9" type="stmt"/>
-        <line num="75" count="9" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="7" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="64" count="7" type="stmt"/>
+        <line num="75" count="7" type="stmt"/>
       </file>
     </package>
   </project>

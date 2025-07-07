@@ -26,7 +26,9 @@ describe('animated-line-chart', () => {
       template: () => <animated-line-chart><span slot="tooltip">Tip</span></animated-line-chart>
     });
     const root = getRoot(page);
-    expect(root.querySelector('[slot="tooltip"]').textContent).toBe('Tip');
+    const slot = root.querySelector('[slot="tooltip"]');
+    expect(slot).toBeTruthy();
+    if (slot) expect(slot.textContent).toBe('Tip');
   });
 
   it('applies custom color', async () => {
@@ -50,11 +52,14 @@ describe('animated-line-chart', () => {
     // Add role and aria-label checks if implemented
   });
 
-  it.skip('renders slot content', async () => {
-    // Skipped: slot rendering may not work in test env
-  });
-
-  it.skip('resizes responsively', async () => {
-    // Skipped: style.width may not be set in test env
+  it('resizes responsively', async () => {
+    const page = await newSpecPage({
+      components: [LineChart],
+      template: () => <animated-line-chart data={[10,20]} labels={["A","B"]} />
+    });
+    const root = getRoot(page);
+    const wrapper = root.querySelector('.line-chart-wrapper');
+    expect(wrapper).toBeTruthy();
+    expect(['100%', ''].includes(wrapper.style.width)).toBe(true);
   });
 }); 

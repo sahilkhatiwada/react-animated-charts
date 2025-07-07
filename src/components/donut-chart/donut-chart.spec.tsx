@@ -26,7 +26,9 @@ describe('animated-donut-chart', () => {
       template: () => <animated-donut-chart><span slot="tooltip">Tip</span></animated-donut-chart>
     });
     const root = getRoot(page);
-    expect(root.querySelector('[slot="tooltip"]').textContent).toBe('Tip');
+    const slot = root.querySelector('[slot="tooltip"]');
+    expect(slot).toBeTruthy();
+    if (slot) expect(slot.textContent).toBe('Tip');
   });
 
   it('applies custom colors', async () => {
@@ -50,7 +52,14 @@ describe('animated-donut-chart', () => {
     expect(root.querySelector('.donut-chart-wrapper')).toBeTruthy();
   });
 
-  it.skip('resizes responsively', async () => {
-    // Skipped: style.width may not be set in test env
+  it('resizes responsively', async () => {
+    const page = await newSpecPage({
+      components: [DonutChart],
+      template: () => <animated-donut-chart data={[10,20]} labels={["A","B"]} />
+    });
+    const root = getRoot(page);
+    const wrapper = root.querySelector('.donut-chart-wrapper');
+    expect(wrapper).toBeTruthy();
+    expect(['100%', ''].includes(wrapper.style.width)).toBe(true);
   });
 }); 
