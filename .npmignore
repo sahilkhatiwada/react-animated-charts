@@ -6,4 +6,7 @@
 !src/
 !package.json
 !README.md
-!LICENSE 
+!LICENSE
+!jest.config.js
+!.eslintrc.json
+!.releaserc.json 
