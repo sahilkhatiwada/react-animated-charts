@@ -1,0 +1,22 @@
+documentation:
+  - 'README.md'
+  - '**/*.md'
+  - '.github/**'
+
+ci:
+  - '.github/workflows/**'
+  - 'jest.config.js'
+  - '.eslintrc.json'
+  - '.releaserc.json'
+
+feature:
+  - 'src/components/**'
+  - '**/feature*'
+
+bug:
+  - '**/bug*'
+  - '**/fix*'
+
+test:
+  - '**/*.spec.tsx'
+  - '**/*.test.tsx' 
