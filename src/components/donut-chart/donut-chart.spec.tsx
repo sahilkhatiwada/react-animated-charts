@@ -3,16 +3,21 @@ import { h } from '@stencil/core';
 import { DonutChart } from './donut-chart';
 
 describe('animated-donut-chart', () => {
+  function getRoot(page) {
+    return page.root.shadowRoot || page.root;
+  }
+
   it('renders with data and title', async () => {
     const page = await newSpecPage({
       components: [DonutChart],
       template: () => <animated-donut-chart data={[10,20,30]} labels={["A","B","C"]} title="Donut Chart" />
     });
     expect(page.root).toBeTruthy();
-    const title = page.root.querySelector('.chart-title');
+    const root = getRoot(page);
+    const title = root.querySelector('.chart-title');
     expect(title).toBeTruthy();
     expect(title?.textContent).toBe('Donut Chart');
-    expect(page.root.querySelectorAll('circle').length).toBe(3);
+    expect(root.querySelectorAll('circle').length).toBe(3);
   });
 
   it('renders slot content', async () => {
@@ -20,7 +25,8 @@ describe('animated-donut-chart', () => {
       components: [DonutChart],
       template: () => <animated-donut-chart><span slot="tooltip">Tip</span></animated-donut-chart>
     });
-    expect(page.root.querySelector('[slot="tooltip"]').textContent).toBe('Tip');
+    const root = getRoot(page);
+    expect(root.querySelector('[slot="tooltip"]').textContent).toBe('Tip');
   });
 
   it('applies custom colors', async () => {
@@ -28,7 +34,8 @@ describe('animated-donut-chart', () => {
       components: [DonutChart],
       template: () => <animated-donut-chart data={[10,20]} labels={["A","B"]} colors={["#ff0000","#00ff00"]} />
     });
-    const circles = page.root.querySelectorAll('circle');
+    const root = getRoot(page);
+    const circles = root.querySelectorAll('circle');
     expect(circles.length).toBe(2);
     expect(circles[0].getAttribute('stroke')).toBe('#ff0000');
     expect(circles[1].getAttribute('stroke')).toBe('#00ff00');
@@ -39,7 +46,8 @@ describe('animated-donut-chart', () => {
       components: [DonutChart],
       template: () => <animated-donut-chart data={[10,20]} labels={["A","B"]} title="Accessible Chart" />
     });
-    expect(page.root.querySelector('.donut-chart-wrapper')).toBeTruthy();
+    const root = getRoot(page);
+    expect(root.querySelector('.donut-chart-wrapper')).toBeTruthy();
   });
 
   it('resizes responsively', async () => {
@@ -47,7 +55,8 @@ describe('animated-donut-chart', () => {
       components: [DonutChart],
       template: () => <animated-donut-chart data={[10,20]} labels={["A","B"]} />
     });
-    const wrapper = page.root.querySelector('.donut-chart-wrapper');
+    const root = getRoot(page);
+    const wrapper = root.querySelector('.donut-chart-wrapper');
     expect(wrapper).toBeTruthy();
     expect(wrapper.style.width).toBe('100%');
   });
