@@ -11,6 +11,7 @@ export class BarChart {
   @Prop() labels: string[] = [];
   @Prop() colors: string[] = [];
   @Prop() height: number = 240;
+  @Prop() title?: string;
 
   parseArrayProp(prop: any): any[] {
     if (Array.isArray(prop)) return prop;
