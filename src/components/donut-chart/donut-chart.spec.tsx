@@ -1,4 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
+import { h } from '@stencil/core';
 import { DonutChart } from './donut-chart';
 
 describe('animated-donut-chart', () => {

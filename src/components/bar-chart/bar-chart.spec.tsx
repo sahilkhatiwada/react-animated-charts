@@ -1,4 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
+import { h } from '@stencil/core';
 import { BarChart } from './bar-chart';
 
 describe('animated-bar-chart', () => {

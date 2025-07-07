@@ -1,4 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
+import { h } from '@stencil/core';
 import { AreaChart } from './area-chart';
 
 describe('animated-area-chart', () => {

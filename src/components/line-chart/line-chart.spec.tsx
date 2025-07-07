@@ -1,4 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing';
+import { h } from '@stencil/core';
 import { LineChart } from './line-chart';
 
 describe('animated-line-chart', () => {

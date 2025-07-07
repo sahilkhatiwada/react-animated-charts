@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/20</span>
+                <span class='fraction'>15/20</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">62.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>5/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">15.78% </span>
+                <span class="strong">73.68% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/19</span>
+                <span class='fraction'>14/19</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -125,17 +125,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -143,16 +143,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -172,19 +172,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, Prop, h } from '@stencil/core';
 import './bar-chart.css';
 &nbsp;
-<span class="fstat-no" title="function not covered" >@Component({</span>
+@Component({
   tag: 'animated-bar-chart',
   styleUrl: 'bar-chart.css',
   shadow: true,
 })
 export class BarChart {
-  @Prop() <span class="cstat-no" title="statement not covered" >data: number[] = [];</span>
-  @Prop() <span class="cstat-no" title="statement not covered" >labels: string[] = [];</span>
-  @Prop() <span class="cstat-no" title="statement not covered" >colors: string[] = [];</span>
-  @Prop() <span class="cstat-no" title="statement not covered" >height: number = 240;</span>
+  @Prop() data: number[] = [];
+  @Prop() labels: string[] = [];
+  @Prop() colors: string[] = [];
+  @Prop() height: number = 240;
 &nbsp;
-<span class="fstat-no" title="function not covered" >  parseArrayProp(</span>prop: any): any[] {
-<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (Array.isArray(prop)) <span class="cstat-no" title="statement not covered" >return prop;</span></span>
+  parseArrayProp(prop: any): any[] {
+    if (Array.isArray(prop)) return prop;
 <span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof prop === 'string') {</span>
 <span class="cstat-no" title="statement not covered" >      try {</span>
 <span class="cstat-no" title="statement not covered" >        return JSON.parse(prop);</span>
@@ -195,17 +195,17 @@ export class BarChart {
 <span class="cstat-no" title="statement not covered" >    return [];</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  render(</span>) {
-    const data = <span class="cstat-no" title="statement not covered" >this.parseArrayProp(this.data);</span>
-    const labels = <span class="cstat-no" title="statement not covered" >this.parseArrayProp(this.labels);</span>
-    const colors = <span class="cstat-no" title="statement not covered" >this.parseArrayProp(this.colors);</span>
-    const max = <span class="cstat-no" title="statement not covered" >Math.max(...data, 1);</span>
-<span class="cstat-no" title="statement not covered" >    return (</span>
+  render() {
+    const data = this.parseArrayProp(this.data);
+    const labels = this.parseArrayProp(this.labels);
+    const colors = this.parseArrayProp(this.colors);
+    const max = Math.max(...data, 1);
+    return (
       &lt;div class="bar-chart-wrapper"&gt;
-        {this.title &amp;&amp; &lt;div class="chart-title"&gt;{this.title}&lt;/div&gt;}
+        {this.title &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;div class="chart-title"&gt;{this.title}&lt;/div&gt;}</span>
         &lt;div class="bar-chart" style={{ height: `${this.height}px` }}&gt;
-          {data.map(<span class="fstat-no" title="function not covered" >(v</span>alue, i) =&gt; (
-<span class="cstat-no" title="statement not covered" >            &lt;div class="bar-container" key={labels[i] || i}&gt;</span>
+          {data.map((value, i) =&gt; (
+            &lt;div class="bar-container" key={labels[i] || <span class="branch-1 cbranch-no" title="branch not covered" >i}</span>&gt;
               &lt;div
                 class="bar"
                 style={{
@@ -229,7 +229,7 @@ export class BarChart {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-07-07T16:52:17.139Z
+                at 2025-07-07T16:54:09.178Z
             </div>
         <script src="../prettify.js"></script>
         <script>
