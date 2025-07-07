@@ -23,7 +23,8 @@ describe('animated-bar-chart', () => {
   it('renders slot content', async () => {
     const page = await newSpecPage({
       components: [BarChart],
-      template: () => <animated-bar-chart><span slot="tooltip">Tip</span></animated-bar-chart>
+      template: () => <animated-bar-chart><span slot="tooltip">Tip</span></animated-bar-chart>,
+      supportsShadowDom: false
     });
     const root = getRoot(page);
     const slot = root.querySelector('[slot="tooltip"]');

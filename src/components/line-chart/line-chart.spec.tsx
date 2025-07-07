@@ -23,7 +23,8 @@ describe('animated-line-chart', () => {
   it('renders slot content', async () => {
     const page = await newSpecPage({
       components: [LineChart],
-      template: () => <animated-line-chart><span slot="tooltip">Tip</span></animated-line-chart>
+      template: () => <animated-line-chart><span slot="tooltip">Tip</span></animated-line-chart>,
+      supportsShadowDom: false
     });
     const root = getRoot(page);
     const slot = root.querySelector('[slot="tooltip"]');

@@ -23,7 +23,8 @@ describe('animated-donut-chart', () => {
   it('renders slot content', async () => {
     const page = await newSpecPage({
       components: [DonutChart],
-      template: () => <animated-donut-chart><span slot="tooltip">Tip</span></animated-donut-chart>
+      template: () => <animated-donut-chart><span slot="tooltip">Tip</span></animated-donut-chart>,
+      supportsShadowDom: false
     });
     const root = getRoot(page);
     const slot = root.querySelector('[slot="tooltip"]');
