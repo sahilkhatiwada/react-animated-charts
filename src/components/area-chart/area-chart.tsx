@@ -27,9 +27,22 @@ export class AreaChart {
     }
   };
 
+  parseArrayProp(prop: any): any[] {
+    if (Array.isArray(prop)) return prop;
+    if (typeof prop === 'string') {
+      try {
+        return JSON.parse(prop);
+      } catch {
+        return prop.split(',');
+      }
+    }
+    return [];
+  }
+
   getPoints() {
-    const max = Math.max(...this.data, 1);
-    return this.data.map((v, i) => `${(i / (this.data.length - 1)) * 100},${100 - (v / max) * 100}`).join(' ');
+    const data = this.parseArrayProp(this.data);
+    const max = Math.max(...data, 1);
+    return data.map((v, i) => `${(i / (data.length - 1)) * 100},${100 - (v / max) * 100}`).join(' ');
   }
 
   getAreaPoints() {
@@ -38,6 +51,8 @@ export class AreaChart {
   }
 
   render() {
+    const data = this.parseArrayProp(this.data);
+    const labels = this.parseArrayProp(this.labels);
     return (
       <div class="area-chart-wrapper">
         {this.title && <div class="chart-title">{this.title}</div>}
@@ -57,7 +72,7 @@ export class AreaChart {
             />
           </svg>
           <div class="area-labels">
-            {this.labels.map((l, i) => (
+            {labels.map((l, i) => (
               <span key={i}>{l}</span>
             ))}
           </div>

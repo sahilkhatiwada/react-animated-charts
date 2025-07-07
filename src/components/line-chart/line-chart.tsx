@@ -27,12 +27,27 @@ export class LineChart {
     }
   };
 
+  parseArrayProp(prop: any): any[] {
+    if (Array.isArray(prop)) return prop;
+    if (typeof prop === 'string') {
+      try {
+        return JSON.parse(prop);
+      } catch {
+        return prop.split(',');
+      }
+    }
+    return [];
+  }
+
   getPoints() {
-    const max = Math.max(...this.data, 1);
-    return this.data.map((v, i) => `${(i / (this.data.length - 1)) * 100},${100 - (v / max) * 100}`).join(' ');
+    const data = this.parseArrayProp(this.data);
+    const max = Math.max(...data, 1);
+    return data.map((v, i) => `${(i / (data.length - 1)) * 100},${100 - (v / max) * 100}`).join(' ');
   }
 
   render() {
+    const data = this.parseArrayProp(this.data);
+    const labels = this.parseArrayProp(this.labels);
     return (
       <div class="line-chart-wrapper">
         {this.title && <div class="chart-title">{this.title}</div>}
@@ -45,18 +60,18 @@ export class LineChart {
               points={this.getPoints()}
               style={{ transition: 'all 1s cubic-bezier(0.4,0,0.2,1)' }}
             />
-            {this.data.map((v, i) => (
+            {data.map((v, i) => (
               <circle
                 key={i}
-                cx={(i / (this.data.length - 1)) * 100}
-                cy={100 - (v / Math.max(...this.data, 1)) * 100}
+                cx={(i / (data.length - 1)) * 100}
+                cy={100 - (v / Math.max(...data, 1)) * 100}
                 r={2.5}
                 fill={this.color}
               />
             ))}
           </svg>
           <div class="line-labels">
-            {this.labels.map((l, i) => (
+            {labels.map((l, i) => (
               <span key={i}>{l}</span>
             ))}
           </div>

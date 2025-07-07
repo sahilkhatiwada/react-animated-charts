@@ -28,8 +28,23 @@ export class DonutChart {
     }
   };
 
+  parseArrayProp(prop: any): any[] {
+    if (Array.isArray(prop)) return prop;
+    if (typeof prop === 'string') {
+      try {
+        return JSON.parse(prop);
+      } catch {
+        return prop.split(',');
+      }
+    }
+    return [];
+  }
+
   render() {
-    const total = this.data.reduce((a, b) => a + b, 0) || 1;
+    const data = this.parseArrayProp(this.data);
+    const labels = this.parseArrayProp(this.labels);
+    const colors = this.parseArrayProp(this.colors);
+    const total = data.reduce((a, b) => a + b, 0) || 1;
     let offset = 0;
     const radius = (this.size - this.strokeWidth) / 2;
     const circumference = 2 * Math.PI * radius;
@@ -38,7 +53,7 @@ export class DonutChart {
         {this.title && <div class="chart-title">{this.title}</div>}
         <div class="donut-chart">
           <svg width={this.size} height={this.size} viewBox={`0 0 ${this.size} ${this.size}`}>
-            {this.data.map((value, i) => {
+            {data.map((value, i) => {
               const dash = (value / total) * circumference;
               const dashArray = `${dash} ${circumference - dash}`;
               const circleOffset = offset;
@@ -50,7 +65,7 @@ export class DonutChart {
                   cy={this.size / 2}
                   r={radius}
                   fill="none"
-                  stroke={this.colors[i] || '#3b82f6'}
+                  stroke={colors[i] || '#3b82f6'}
                   stroke-width={this.strokeWidth}
                   stroke-dasharray={dashArray}
                   stroke-dashoffset={-circleOffset}
@@ -60,9 +75,9 @@ export class DonutChart {
             })}
           </svg>
           <div class="donut-labels">
-            {this.labels.map((l, i) => (
+            {labels.map((l, i) => (
               <span key={i} class="donut-legend">
-                <span class="donut-dot" style={{ background: this.colors[i] || '#3b82f6' }}></span>
+                <span class="donut-dot" style={{ background: colors[i] || '#3b82f6' }}></span>
                 {l}
               </span>
             ))}
