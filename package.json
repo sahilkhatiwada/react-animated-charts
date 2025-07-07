@@ -1,6 +1,6 @@
 {
   "name": "animated-charts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Animated chart web components for all frameworks (React, Angular, Vue, HTML)",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
