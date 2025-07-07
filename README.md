@@ -1,3 +1,8 @@
+[![npm version](https://img.shields.io/npm/v/animated-charts.svg)](https://www.npmjs.com/package/animated-charts)
+[![Build Status](https://github.com/yourusername/animated-charts/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/animated-charts/actions)
+[![codecov](https://codecov.io/gh/yourusername/animated-charts/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/animated-charts)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 # react-animated-charts
 
 **react-animated-charts** is a plug-and-play charting library designed to bring dashboards to life. Built with Tailwind CSS and Framer Motion, this package enables developers to quickly create stunning, mobile-responsive data visualizations with smooth, built-in animations.
