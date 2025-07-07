@@ -1,0 +1,9 @@
+# Ignore everything...
+*
+
+# ...except these:
+!dist/
+!src/
+!package.json
+!README.md
+!LICENSE 
