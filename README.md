@@ -75,36 +75,66 @@ const barLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 <AreaChart data={[15, 30, 45, 30, 60, 80, 70]} labels={["1", "2", "3", "4", "5", "6", "7"]} color="#6366f1" />
 ```
 
-## Usage as Web Component
+## Usage Examples
 
-### In HTML
+### HTML/Vanilla JS
 ```html
-<animated-bar-chart data='[30,50,80,40,60]' labels='["Mon","Tue","Wed","Thu","Fri"]' colors='["#3b82f6","#10b981","#f59e42","#ef4444","#6366f1"]'></animated-bar-chart>
+<animated-bar-chart data='[30,50,80,40,60]' labels='["Mon","Tue","Wed","Thu","Fri"]' colors='["#3b82f6","#10b981","#f59e42","#ef4444","#6366f1"]' title="Weekly Sales"></animated-bar-chart>
+<animated-line-chart data='[10,40,35,70,50]' labels='["Jan","Feb","Mar","Apr","May"]' color="#ef4444" title="Monthly Growth"></animated-line-chart>
+<animated-donut-chart data='[25,35,20,20]' labels='["A","B","C","D"]' colors='["#3b82f6","#f59e42","#10b981","#ef4444"]' title="Segments"></animated-donut-chart>
+<animated-area-chart data='[15,30,45,30,60,80,70]' labels='["1","2","3","4","5","6","7"]' color="#6366f1" title="Trend"></animated-area-chart>
 <script type="module" src="/dist/animated-charts/animated-charts.esm.js"></script>
 ```
 
-### In React
+### React
 ```tsx
 import { defineCustomElements } from 'animated-charts/loader';
 defineCustomElements();
 
-<animated-bar-chart data='[30,50,80,40,60]' labels='["Mon","Tue","Wed","Thu","Fri"]' colors='["#3b82f6","#10b981","#f59e42","#ef4444","#6366f1"]'></animated-bar-chart>
+<animated-bar-chart data='[30,50,80,40,60]' labels='["Mon","Tue","Wed","Thu","Fri"]' colors='["#3b82f6","#10b981","#f59e42","#ef4444","#6366f1"]' title="Weekly Sales"></animated-bar-chart>
+<animated-line-chart data='[10,40,35,70,50]' labels='["Jan","Feb","Mar","Apr","May"]' color="#ef4444" title="Monthly Growth"></animated-line-chart>
+<animated-donut-chart data='[25,35,20,20]' labels='["A","B","C","D"]' colors='["#3b82f6","#f59e42","#10b981","#ef4444"]' title="Segments"></animated-donut-chart>
+<animated-area-chart data='[15,30,45,30,60,80,70]' labels='["1","2","3","4","5","6","7"]' color="#6366f1" title="Trend"></animated-area-chart>
 ```
 
-### In Angular
+### Angular
 ```ts
 import { defineCustomElements } from 'animated-charts/loader';
 defineCustomElements();
 ```
 ```html
-<animated-bar-chart data='[30,50,80,40,60]' labels='["Mon","Tue","Wed","Thu","Fri"]' colors='["#3b82f6","#10b981","#f59e42","#ef4444","#6366f1"]'></animated-bar-chart>
+<animated-bar-chart data='[30,50,80,40,60]' labels='["Mon","Tue","Wed","Thu","Fri"]' colors='["#3b82f6","#10b981","#f59e42","#ef4444","#6366f1"]' title="Weekly Sales"></animated-bar-chart>
+<animated-line-chart data='[10,40,35,70,50]' labels='["Jan","Feb","Mar","Apr","May"]' color="#ef4444" title="Monthly Growth"></animated-line-chart>
+<animated-donut-chart data='[25,35,20,20]' labels='["A","B","C","D"]' colors='["#3b82f6","#f59e42","#10b981","#ef4444"]' title="Segments"></animated-donut-chart>
+<animated-area-chart data='[15,30,45,30,60,80,70]' labels='["1","2","3","4","5","6","7"]' color="#6366f1" title="Trend"></animated-area-chart>
 ```
 
-### In Vue
+### Vue
 ```js
 import { defineCustomElements } from 'animated-charts/loader';
 defineCustomElements();
 ```
 ```html
-<animated-bar-chart data='[30,50,80,40,60]' labels='["Mon","Tue","Wed","Thu","Fri"]' colors='["#3b82f6","#10b981","#f59e42","#ef4444","#6366f1"]'></animated-bar-chart>
+<animated-bar-chart data='[30,50,80,40,60]' labels='["Mon","Tue","Wed","Thu","Fri"]' colors='["#3b82f6","#10b981","#f59e42","#ef4444","#6366f1"]' title="Weekly Sales"></animated-bar-chart>
+<animated-line-chart data='[10,40,35,70,50]' labels='["Jan","Feb","Mar","Apr","May"]' color="#ef4444" title="Monthly Growth"></animated-line-chart>
+<animated-donut-chart data='[25,35,20,20]' labels='["A","B","C","D"]' colors='["#3b82f6","#f59e42","#10b981","#ef4444"]' title="Segments"></animated-donut-chart>
+<animated-area-chart data='[15,30,45,30,60,80,70]' labels='["1","2","3","4","5","6","7"]' color="#6366f1" title="Trend"></animated-area-chart>
 ```
+
+---
+
+## New Features
+
+### Chart Title
+All chart components now accept a `title` prop to display a heading above the chart.
+
+### Custom Tooltip Slot
+You can provide a custom tooltip by using a named slot:
+```html
+<animated-bar-chart ...>
+  <span slot="tooltip">Custom tooltip content here</span>
+</animated-bar-chart>
+```
+
+### Responsive Resizing
+Charts automatically resize to fit their container, making them mobile-friendly and adaptive to layout changes.
