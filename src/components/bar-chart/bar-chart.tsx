@@ -28,6 +28,7 @@ export class BarChart {
     const data = this.parseArrayProp(this.data);
     const labels = this.parseArrayProp(this.labels);
     const colors = this.parseArrayProp(this.colors);
+    console.log('BarChart render', { data, labels, colors, title: this.title });
     const max = Math.max(...data, 1);
     return (
       <div class="bar-chart-wrapper">
