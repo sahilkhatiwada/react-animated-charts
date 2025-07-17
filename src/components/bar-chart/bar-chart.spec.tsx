@@ -10,7 +10,7 @@ describe('animated-bar-chart', () => {
   it('renders with data and title', async () => {
     const page = await newSpecPage({
       components: [BarChart],
-      template: () => <animated-bar-chart data={[10,20,30]} labels={["A","B","C"]} title="Test Chart" />
+      template: () => <animated-bar-chart data={[10,20,30]} labels={["A","B","C"]} chartTitle="Test Chart" />
     });
     expect(page.root).toBeTruthy();
     const root = getRoot(page);
@@ -47,7 +47,7 @@ describe('animated-bar-chart', () => {
   it('is accessible', async () => {
     const page = await newSpecPage({
       components: [BarChart],
-      template: () => <animated-bar-chart data={[10,20]} labels={["A","B"]} title="Accessible Chart" />
+      template: () => <animated-bar-chart data={[10,20]} labels={["A","B"]} chartTitle="Accessible Chart" />
     });
     const root = getRoot(page);
     expect(root.querySelector('.bar-chart-wrapper')).toBeTruthy();

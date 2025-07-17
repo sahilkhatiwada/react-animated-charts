@@ -13,7 +13,7 @@ export class DonutChart {
   @Prop() colors: string[] = [];
   @Prop() size: number = 120;
   @Prop() strokeWidth: number = 16;
-  @Prop() title?: string;
+  @Prop() chartTitle?: string;
 
   componentDidLoad() {
     this.handleResize();
@@ -50,7 +50,7 @@ export class DonutChart {
     const circumference = 2 * Math.PI * radius;
     return (
       <div class="donut-chart-wrapper">
-        {this.title && <div class="chart-title">{this.title}</div>}
+        {this.chartTitle && <div class="chart-title">{this.chartTitle}</div>}
         <div class="donut-chart">
           <svg width={this.size} height={this.size} viewBox={`0 0 ${this.size} ${this.size}`}>
             {data.map((value, i) => {

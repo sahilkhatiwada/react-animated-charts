@@ -10,7 +10,7 @@ describe('animated-donut-chart', () => {
   it('renders with data and title', async () => {
     const page = await newSpecPage({
       components: [DonutChart],
-      template: () => <animated-donut-chart data={[10,20,30]} labels={["A","B","C"]} title="Donut Chart" />
+      template: () => <animated-donut-chart data={[10,20,30]} labels={["A","B","C"]} chartTitle="Donut Chart" />
     });
     expect(page.root).toBeTruthy();
     const root = getRoot(page);
@@ -47,7 +47,7 @@ describe('animated-donut-chart', () => {
   it('is accessible', async () => {
     const page = await newSpecPage({
       components: [DonutChart],
-      template: () => <animated-donut-chart data={[10,20]} labels={["A","B"]} title="Accessible Chart" />
+      template: () => <animated-donut-chart data={[10,20]} labels={["A","B"]} chartTitle="Accessible Chart" />
     });
     const root = getRoot(page);
     expect(root.querySelector('.donut-chart-wrapper')).toBeTruthy();

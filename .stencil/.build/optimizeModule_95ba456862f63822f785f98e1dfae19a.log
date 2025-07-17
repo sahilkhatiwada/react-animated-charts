@@ -1,0 +1,10 @@
+var r={exports:{}};var e={};
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var n;function t(){if(n)return e;n=1;var r=Symbol.for("react.transitional.element"),t=Symbol.for("react.fragment");function a(e,n,t){var a=null;void 0!==t&&(a=""+t);void 0!==n.key&&(a=""+n.key);if("key"in n){t={};for(var o in n)"key"!==o&&(t[o]=n[o])}else t=n;n=t.ref;return{$$typeof:r,type:e,key:a,ref:void 0!==n?n:null,props:t}}e.Fragment=t;e.jsx=a;e.jsxs=a;return e}var a;function o(){if(a)return r.exports;a=1;{r.exports=t()}return r.exports}var i=o();export{i as j,o as r};

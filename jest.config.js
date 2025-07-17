@@ -8,4 +8,7 @@ module.exports = {
     '!src/**/*.d.ts'
   ],
   coverageReporters: ['lcov', 'text-summary'],
+  transform: {
+    '^.+\\.[tj]sx?$': 'babel-jest',
+  },
 }; 

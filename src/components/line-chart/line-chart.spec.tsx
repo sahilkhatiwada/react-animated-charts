@@ -10,7 +10,7 @@ describe('animated-line-chart', () => {
   it('renders with data and title', async () => {
     const page = await newSpecPage({
       components: [LineChart],
-      template: () => <animated-line-chart data={[10,20,30]} labels={["A","B","C"]} title="Line Chart" />
+      template: () => <animated-line-chart data={[10,20,30]} labels={["A","B","C"]} chartTitle="Line Chart" />
     });
     expect(page.root).toBeTruthy();
     const root = getRoot(page);
@@ -46,7 +46,7 @@ describe('animated-line-chart', () => {
   it('is accessible', async () => {
     const page = await newSpecPage({
       components: [LineChart],
-      template: () => <animated-line-chart data={[10,20]} labels={["A","B"]} title="Accessible Chart" />
+      template: () => <animated-line-chart data={[10,20]} labels={["A","B"]} chartTitle="Accessible Chart" />
     });
     const root = getRoot(page);
     expect(root.querySelector('.line-chart-wrapper')).toBeTruthy();

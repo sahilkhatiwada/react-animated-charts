@@ -117,6 +117,91 @@ const barLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 <!-- More: https://github.com/sahilkhatiwada/react-animated-charts -->
 ```
 
+### Heatmap
+```html
+<animated-heatmap data='[[1,2,3,4],[2,3,4,5],[3,4,5,6],[4,5,6,7]]' width="300" height="300" colors='["#f8f9fa","#dc3545"]'></animated-heatmap>
+```
+**Props:**
+- `data`: 2D array of numbers (required)
+- `width`, `height`: number (optional)
+- `colors`: array of color strings (optional)
+- `animationDuration`: number (ms, optional)
+
+### PieChart
+```html
+<animated-pie-chart data='[{"value":10,"label":"Red","color":"#ef4444"},{"value":20,"label":"Blue","color":"#3b82f6"},{"value":30,"label":"Green","color":"#10b981"},{"value":40,"label":"Yellow","color":"#f59e42"}]' width="300" height="300"></animated-pie-chart>
+```
+**Props:**
+- `data`: array of objects `{ value, label?, color? }` (required)
+- `width`, `height`: number (optional)
+- `colors`: array of color strings (optional)
+- `animationDuration`: number (ms, optional)
+
+### Histogram
+```html
+<animated-histogram data='[1,2,2,3,3,3,4,5,5,6,7,8,8,8,9]' bins="6" width="400" height="300"></animated-histogram>
+```
+**Props:**
+- `data`: array of numbers (required)
+- `bins`: number (optional)
+- `width`, `height`: number (optional)
+- `colors`: array of color strings (optional)
+- `animationDuration`: number (ms, optional)
+
+### CandlestickChart
+```html
+<animated-candlestick-chart data='[{"open":10,"close":15,"high":18,"low":8},{"open":15,"close":12,"high":16,"low":10}]' width="400" height="300"></animated-candlestick-chart>
+```
+**Props:**
+- `data`: array of objects `{ open, close, high, low, label? }` (required)
+- `width`, `height`: number (optional)
+- `colors`: array `[upColor, downColor]` (optional)
+- `animationDuration`: number (ms, optional)
+
+### GaugeChart
+```html
+<animated-gauge-chart value="65" min="0" max="100" width="300" height="180"></animated-gauge-chart>
+```
+**Props:**
+- `value`: number (required)
+- `min`, `max`: number (optional)
+- `width`, `height`: number (optional)
+- `colors`: array of color strings (optional)
+- `animationDuration`: number (ms, optional)
+
+### RadarChart
+```html
+<animated-radar-chart data='[{"label":"A","value":80},{"label":"B","value":60},{"label":"C","value":90},{"label":"D","value":70},{"label":"E","value":50}]' width="350" height="350"></animated-radar-chart>
+```
+**Props:**
+- `data`: array of objects `{ label, value }` (required)
+- `maxValue`: number (optional)
+- `width`, `height`: number (optional)
+- `colors`: array of color strings (optional)
+- `animationDuration`: number (ms, optional)
+
+### ScatterPlot
+```html
+<animated-scatter-plot data='[{"x":1,"y":2,"label":"P1"},{"x":2,"y":3,"label":"P2"},{"x":3,"y":1,"label":"P3"},{"x":4,"y":4,"label":"P4"}]' width="500" height="350"></animated-scatter-plot>
+```
+**Props:**
+- `data`: array of objects `{ x, y, r?, color?, label? }` (required)
+- `width`, `height`: number (optional)
+- `colors`: array of color strings (optional)
+- `animationDuration`: number (ms, optional)
+- `xLabel`, `yLabel`: string (optional)
+
+### BubbleChart
+```html
+<animated-bubble-chart data='[{"x":1,"y":2,"r":10,"label":"B1"},{"x":2,"y":3,"r":15,"label":"B2"},{"x":3,"y":1,"r":8,"label":"B3"},{"x":4,"y":4,"r":12,"label":"B4"}]' width="500" height="350"></animated-bubble-chart>
+```
+**Props:**
+- `data`: array of objects `{ x, y, r, color?, label? }` (required)
+- `width`, `height`: number (optional)
+- `colors`: array of color strings (optional)
+- `animationDuration`: number (ms, optional)
+- `xLabel`, `yLabel`: string (optional)
+
 ---
 
 ## Features
@@ -163,3 +248,87 @@ Charts automatically resize to fit their container, making them mobile-friendly 
 ## License
 
 MIT
+
+---
+
+## All Chart Examples (React)
+
+```tsx
+import { BarChart, LineChart, DonutChart, AreaChart } from 'animated-charts/react';
+import { Heatmap } from './src/components/heatmap/heatmap';
+import { PieChart } from './src/components/pie-chart/pie-chart';
+import { Histogram } from './src/components/histogram/histogram';
+import { CandlestickChart } from './src/components/candlestick-chart/candlestick-chart';
+import { GaugeChart } from './src/components/gauge-chart/gauge-chart';
+import { RadarChart } from './src/components/radar-chart/radar-chart';
+import { ScatterPlot } from './src/components/scatter-plot/scatter-plot';
+import { BubbleChart } from './src/components/bubble-chart/bubble-chart';
+
+const barData = [30, 50, 80, 40, 60];
+const barLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+const lineData = [10, 40, 35, 70, 50];
+const lineLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
+const donutData = [25, 35, 20, 20];
+const donutLabels = ['A', 'B', 'C', 'D'];
+const donutColors = ['#3b82f6', '#f59e42', '#10b981', '#ef4444'];
+const areaData = [15, 30, 45, 30, 60, 80, 70];
+const areaLabels = ['1', '2', '3', '4', '5', '6', '7'];
+const heatmapData = [
+  [1, 2, 3, 4],
+  [2, 3, 4, 5],
+  [3, 4, 5, 6],
+  [4, 5, 6, 7],
+];
+const pieData = [
+  { value: 10, label: 'Red', color: '#ef4444' },
+  { value: 20, label: 'Blue', color: '#3b82f6' },
+  { value: 30, label: 'Green', color: '#10b981' },
+  { value: 40, label: 'Yellow', color: '#f59e42' },
+];
+const histogramData = [1, 2, 2, 3, 3, 3, 4, 5, 5, 6, 7, 8, 8, 8, 9];
+const candlestickData = [
+  { open: 10, close: 15, high: 18, low: 8 },
+  { open: 15, close: 12, high: 16, low: 10 },
+  { open: 12, close: 18, high: 20, low: 11 },
+  { open: 18, close: 17, high: 21, low: 15 },
+];
+const gaugeValue = 65;
+const radarData = [
+  { label: 'A', value: 80 },
+  { label: 'B', value: 60 },
+  { label: 'C', value: 90 },
+  { label: 'D', value: 70 },
+  { label: 'E', value: 50 },
+];
+const scatterData = [
+  { x: 1, y: 2, label: 'P1' },
+  { x: 2, y: 3, label: 'P2' },
+  { x: 3, y: 1, label: 'P3' },
+  { x: 4, y: 4, label: 'P4' },
+];
+const bubbleData = [
+  { x: 1, y: 2, r: 10, label: 'B1' },
+  { x: 2, y: 3, r: 15, label: 'B2' },
+  { x: 3, y: 1, r: 8, label: 'B3' },
+  { x: 4, y: 4, r: 12, label: 'B4' },
+];
+
+export default function App() {
+  return (
+    <div>
+      <BarChart data={barData} labels={barLabels} />
+      <LineChart data={lineData} labels={lineLabels} />
+      <DonutChart data={donutData} labels={donutLabels} colors={donutColors} />
+      <AreaChart data={areaData} labels={areaLabels} />
+      <Heatmap data={heatmapData} />
+      <PieChart data={pieData} />
+      <Histogram data={histogramData} bins={6} />
+      <CandlestickChart data={candlestickData} />
+      <GaugeChart value={gaugeValue} />
+      <RadarChart data={radarData} />
+      <ScatterPlot data={scatterData} />
+      <BubbleChart data={bubbleData} />
+    </div>
+  );
+}
+```

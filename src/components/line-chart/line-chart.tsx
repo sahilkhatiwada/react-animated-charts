@@ -12,7 +12,7 @@ export class LineChart {
   @Prop() labels: string[] = [];
   @Prop() color: string = '#3b82f6';
   @Prop() height: number = 240;
-  @Prop() title?: string;
+  @Prop() chartTitle?: string;
 
   componentDidLoad() {
     this.handleResize();
@@ -50,7 +50,7 @@ export class LineChart {
     const labels = this.parseArrayProp(this.labels);
     return (
       <div class="line-chart-wrapper">
-        {this.title && <div class="chart-title">{this.title}</div>}
+        {this.chartTitle && <div class="chart-title">{this.chartTitle}</div>}
         <div class="line-chart" style={{ height: `${this.height}px` }}>
           <svg viewBox="0 0 100 100" class="chart-svg">
             <polyline

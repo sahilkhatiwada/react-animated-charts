@@ -10,7 +10,7 @@ describe('animated-area-chart', () => {
   it('renders with data and title', async () => {
     const page = await newSpecPage({
       components: [AreaChart],
-      template: () => <animated-area-chart data={[10,20,30]} labels={["A","B","C"]} title="Area Chart" />
+      template: () => <animated-area-chart data={[10,20,30]} labels={["A","B","C"]} chartTitle="Area Chart" />
     });
     expect(page.root).toBeTruthy();
     const root = getRoot(page);
@@ -46,7 +46,7 @@ describe('animated-area-chart', () => {
   it('is accessible', async () => {
     const page = await newSpecPage({
       components: [AreaChart],
-      template: () => <animated-area-chart data={[10,20]} labels={["A","B"]} title="Accessible Chart" />
+      template: () => <animated-area-chart data={[10,20]} labels={["A","B"]} chartTitle="Accessible Chart" />
     });
     const root = getRoot(page);
     expect(root.querySelector('.area-chart-wrapper')).toBeTruthy();

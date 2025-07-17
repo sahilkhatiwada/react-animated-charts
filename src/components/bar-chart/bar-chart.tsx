@@ -11,7 +11,7 @@ export class BarChart {
   @Prop() labels: string[] = [];
   @Prop() colors: string[] = [];
   @Prop() height: number = 240;
-  @Prop() title?: string;
+  @Prop() chartTitle?: string;
 
   parseArrayProp(prop: any): any[] {
     if (Array.isArray(prop)) return prop;
@@ -29,11 +29,11 @@ export class BarChart {
     const data = this.parseArrayProp(this.data);
     const labels = this.parseArrayProp(this.labels);
     const colors = this.parseArrayProp(this.colors);
-    console.log('BarChart render', { data, labels, colors, title: this.title });
+    console.log('BarChart render', { data, labels, colors, title: this.chartTitle });
     const max = Math.max(...data, 1);
     return (
       <div class="bar-chart-wrapper">
-        {this.title && <div class="chart-title">{this.title}</div>}
+        {this.chartTitle && <div class="chart-title">{this.chartTitle}</div>}
         <div class="bar-chart" style={{ height: `${this.height}px` }}>
           {data.map((value, i) => (
             <div class="bar-container" key={labels[i] || i}>
